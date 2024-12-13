@@ -9,7 +9,7 @@ const YourFinances = () => {
             </div>
             <div class="absolute lg:right-[66px] right-[-20px] lg:bottom-[41px] bottom-3"><img width="116" height="79"
                 class="lg:max-w-[116px] lg:h-[79px] max-w-[88px] h-[60px] animate-pulse"
-                src="./assets/images/svg/form-ellipse.svg" alt="form-ellipse" /></div>
+                src="./assets/images/svg/form-ellipse.svg" alt="form-ellipse"/></div>
             <div class="container px-5 xl:px-0 max-w-[1140px]">
                 <div class="flex flex-wrap items-center justify-between">
                     <div class="lg:w-[43%] md:w-1/2 w-full xl:px-3 sm:pr-3 px-0 max-md:flex flex-col justify-center items-center">
