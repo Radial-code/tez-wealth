@@ -1,12 +1,13 @@
-import React from 'react'
 
-const Heading = ({ children, className }) => {
-    return (
-        <h2
-            class={`font-poppins font-normal lg:text-5xl text-4xl !leading-140 text-dark-grey max-w-[501px] lg:pb-[10px] pb-2 max-custom-sm:max-w-[276px] max-md:text-center ${className}`}>
-            {children}
-        </h2>
-    )
-}
+const Heading = ({ boldText, className }) => {
+  return (
+    <h2
+      className={`font-normal text-light-black text-opacity-90 font-poppins max-md:text-center !leading-150 lg:text-5xl text-4xl  ${className}`}
+    >
+      <span className="text-deep-sea-green font-bold">{boldText}</span>
+      {leadingText}
+    </h2>
+  );
+};
 
-export default Heading
+export default Heading;

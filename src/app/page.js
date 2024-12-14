@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div className="flex flex-col max-w-[1920px] mx-auto">
       <Hero />
-      <div class="lg:bg-accordion xl:pb-40 lg:pb-32 md:pb-28 pb-[100px] bg-full">
+      <div class="lg:bg-accordion bg-full">
         <AboutTej />
         <OurServices />
       </div>

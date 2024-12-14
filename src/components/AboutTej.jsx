@@ -1,20 +1,42 @@
 import React from 'react'
 import Image from "next/image";
+import { ABOUT_TEZ_LIST } from '@/utils/helper';
 
 const AboutTej = () => {
     return (
-      <div>
+      <div className="xl:pt-40 lg:pt-32 md:pt-28 pt-[100px] relative z-0">
         <Image
           src="/assets/images/svg/about-ellipse.svg"
           height={79}
           width={116}
-          alt="absolute max-sm:w-[51px] max-sm:h-[39px] animate-pulse right-[3%] xl:top-[27%] sm:top-[2%] top-[4.5%] -z-10"
-          className="w-100 h-100"
+          alt="ellipse"
+          className="absolute max-sm:w-[51px] max-sm:h-[39px] animate-pulse right-[3%] xl:top-[27%] sm:top-[2%] top-[4.5%] -z-10"
         />
         <div class="pointer-event-none md:block hidden -z-10 absolute right-[3%] bottom-[-9%] size-[150px] opacity-20 rounded-full blur-[70px] bg-deep-sea-green"></div>
         <div className="container max-w-[1140px] xl:px-0">
-          <div class="grid lg:gap-6 md:gap-4 gap-[50px] md:grid-cols-2 max-md:flex max-md:flex-col-reverse">
-            <div id="aboutContent" class="flex flex-col md:gap-3.5 gap-4"></div>
+          <div className="grid lg:gap-6 md:gap-4 gap-[50px] md:grid-cols-2 max-md:flex max-md:flex-col-reverse">
+            <div className="flex flex-col gap-3.5">
+              {ABOUT_TEZ_LIST.map((data, index) => (
+                <div
+                  key={index}
+                  className="border group bg-white overflow-hidden flex max-custom-sm:h-[124px] max-md:flex-col md:items-center border-deep-sea-green border-opacity-60 rounded-[10px]"
+                >
+                  <div className="bg-deep-sea-green group-hover:bg-light-green max-md:w-[46px] max-md:max-w-[46px] max-md:h-[46px]  max-md:rounded-br-[10px] duration-300  md:min-w-[69px] h-full flex justify-center items-center">
+                    <Image
+                      src={data.icon}
+                      height={32}
+                      width={39}
+                      alt={data.description}
+                      className="max-md:size-[30px]"
+                    />
+                  </div>
+                  <p className="lg:py-4 sm:p-2.5 pb-2.5 px-2.5 !leading-160 lg:pr-4 font-poppins font-normal lg:text-base text-sm text-light-black text-opacity-80">
+                    {data.description}
+                  </p>
+                </div>
+              ))}
+            </div>
+
             <div class="my-auto">
               <h2 class="font-poppins max-md:text-center !leading-150 lg:text-5xl text-4xl text-deep-sea-green font-bold">
                 <span class="font-normal text-light-black text-opacity-90">

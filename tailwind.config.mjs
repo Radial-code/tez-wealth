@@ -57,8 +57,7 @@ export default {
         "hero-background": "url('/assets/images/webp/hero-section.webp')",
         "nav-background": "url('/assets/images/webp/nav-background.webp')",
         "service-ai": "url('/assets/images/webp/service-ai.webp')",
-        "service-management":
-          "url('/assets/images/webp/service-management.webp')",
+        "service-management": "url('/assets/images/webp/service-management.webp')",
         "service-fire": "url('/assets/images/webp/service-fire.webp')",
         "service-interest": "url('/assets/images/webp/service-interest.webp')",
         "service-network": "url('/assets/images/webp/service-network.webp')",
