@@ -1,10 +1,12 @@
 import Image from "next/image";
 import { ABOUT_TEZ_LIST } from '@/utils/helper';
 import Heading from "./custom-ui/Heading";
+import Cta from "./custom-ui/Cta";
+import Paragraph from "./custom-ui/Paragraph";
 
 const AboutTej = () => {
     return (
-      <div className="xl:pt-40 lg:pt-32 md:pt-28 pt-[100px] relative z-0">
+      <div id="about" className="xl:pt-40 lg:pt-32 md:pt-28 pt-[100px] relative z-0">
         <Image
           src="/assets/images/svg/about-ellipse.svg"
           height={79}
@@ -38,23 +40,19 @@ const AboutTej = () => {
             </div>
 
             <div className="my-auto">
-              <Heading className="!text-left" boldText=" Tez Wealth" center>
+              <Heading className="md:!text-start" center boldText=" Tez Wealth">
                 About
               </Heading>
-              <p className="pt-2.5 max-sm:text-opacity-80 text-base max-md:text-center font-normal md:pb-10 pb-[30px] font-poppins text-light-black text-opacity-70 !leading-163">
+              <Paragraph center className="pt-2.5 md:!text-start md:pb-10 pb-[30px] text-light-black text-opacity-70 !leading-163 max-sm:text-opacity-80">
                 Tez Wealth is an AI-driven personal finance and wealth
                 management platform designed for individuals and families with a
                 net worth between $100k and $2 million⁠. The platform aims to
                 provide comprehensive wealth management services for High Net
                 Worth Individuals (HNIs) and High Earners, Not Rich Yet
                 (HENRYs)⁠.
-              </p>
+              </Paragraph>
               <div className="flex max-md:justify-center max-md:items-center">
-                <button className="relative flex items-center justify-center overflow-hidden py-3.5 text-center px-4 font-poppins rounded-full bg-light-green font-semibold text-base text-white !leading-160 transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-deep-sea-green before:duration-500 before:ease-out hover:shadow-bg-deep-sea-green hover:before:h-56 hover:before:w-full">
-                  <span className="relative z-10">
-                    Try Our Interactive Demo
-                  </span>
-                </button>
+                <Cta>Try Our Interactive Demo</Cta>
               </div>
             </div>
           </div>
