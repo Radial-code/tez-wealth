@@ -15,7 +15,7 @@ const NavBar = () => {
      }
     return (
       <nav class="py-2 sm:py-[13px] bg-nav-background bg-no-repeat bg-header lg:bg-deep-sea-green">
-        <div class="containter px-5 mx-auto max-w-[1180px] flex justify-between items-center relative z-10">
+        <div class="containter px-5 xl:px-0 mx-auto max-w-[1140px] flex justify-between items-center relative z-10">
           <a href="#">
             <Image
               src="/assets/images/webp/logo.webp"

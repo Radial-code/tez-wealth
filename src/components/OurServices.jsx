@@ -29,7 +29,7 @@ const OurServices = () => {
         <h2 className="font-poppins text-center pb-[50px] max-md:text-center !leading-150 lg:text-5xl text-4xl text-deep-sea-green font-bold">
           <span className="font-normal text-light-black text-opacity-90">
             Our
-          </span>
+          </span>{" "}
           Services
         </h2>
         <div className="flex max-lg:hidden flex-wrap justify-center -mx-3 flex-row">
@@ -52,7 +52,13 @@ const OurServices = () => {
           <Swiper
             spaceBetween={16}
             slidesPerView={1.2}
-            pagination={{ clickable: true }}
+            loop={true}
+            pagination={{
+              clickable: true,
+              el: ".custom-pagination", // Assign your custom pagination element
+              bulletClass: "swiper-pagination-bullet", // Default class for bullets
+              bulletActiveClass: "swiper-pagination-bullet-active", // Class for active bullet
+            }}
             breakpoints={{
               640: { slidesPerView: 1.5 },
               768: { slidesPerView: 2 },
