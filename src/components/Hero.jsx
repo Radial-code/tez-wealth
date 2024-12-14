@@ -21,12 +21,12 @@ const Hero = () => {
           height={810}
           width={732}
           alt="hero-img"
-          className="max-w-[60%] max-2xl:max-w-[50%] w-full z-0 absolute xl:right-0 md:right-[-55px] h-full top-0 max-lg:hidden 2xl:object-fill"
+          className="max-w-[50%] 2xl:max-w-[45%] w-full z-0 absolute xl:right-0 md:right-[-55px] h-full top-0 max-lg:hidden 2xl:object-fill"
         />
         <div className="container px-5 lg:h-[720px] mx-auto max-w-[1180px] flex flex-wrap items-center  max-lg:h-auto max-lg:pb-3 max-custom-sm:pb-0 max-lg:pt-5">
           <div className="w-full my-auto lg:w-6/12 max-lg:text-center">
             <p className="text-light-black font-semibold text-base md:text-lg lg:text-xl leading-150 font-poppins text-opacity-90 flex items-center max-lg:justify-center gap-3.5">
-            <Icons icon="heroIcon"/>
+              <Icons icon="heroIcon" />
               <span>Welcome to Tez Wealth</span>
             </p>
             <h1 className="xl:text-6xl md:text-5xl text-4xl text-off-green font-poppins !leading-110 pt-5 pb-3.5 md:py-4">
@@ -47,13 +47,13 @@ const Hero = () => {
             </div>
           </div>
           <div className="w-full lg:w-6/12 max-custom-sm:h-[380px] max-lg:h-[500px] mt-10 lg:mt-0">
-            <Image
+            {/* <Image
               src="/assets/images/webp/hero-img.webp"
               height={810}
               width={732}
               alt="hero-img"
               className="max-w-[60%] max-2xl:max-w-[50%] w-full z-0 absolute xl:right-0 md:right-[-55px] h-full top-0 max-lg:hidden 2xl:object-fill"
-            />
+            /> */}
             <Image
               src="/assets/images/webp/graph.webp"
               height={454}
