@@ -2,6 +2,7 @@
 import React, { useState } from 'react'
 import Image from "next/image";
 import { NAV_LINK_LIST } from '@/utils/helper';
+import Cta from '../custom-ui/Cta';
 
 const NavBar = () => {
      const [show, setShow] = useState(true);
@@ -87,12 +88,13 @@ const NavBar = () => {
               />
             </svg>
           </div>
-          <button
+          <Cta>Contact us</Cta>
+          {/* <button
             href="#contact"
             className="relative flex items-center max-lg:hidden justify-center overflow-hidden py-3.5 text-center px-4 font-poppins rounded-full bg-light-green font-semibold text-base text-white !leading-160 transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-deep-sea-green before:duration-500 before:ease-out hover:shadow-bg-deep-sea-green hover:before:h-56 hover:before:w-full hover:border-white border-transparent border transition-all ease-linear duration-500"
           >
             <span className="relative z-10">Contact us</span>
-          </button>
+          </button> */}
         </div>
       </nav>
     );

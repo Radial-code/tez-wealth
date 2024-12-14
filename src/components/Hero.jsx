@@ -1,6 +1,7 @@
 import React from 'react'
 import NavBar from './common/NavBar'
 import Image from "next/image";
+import Cta from './custom-ui/Cta';
 
 const Hero = () => {
     return (
@@ -65,9 +66,12 @@ const Hero = () => {
               worth individuals and HENRYs
             </p>
             <div className="max-lg:flex max-lg:justify-center">
-              <button className="mt-6 w-full custom-sm:w-auto md:mt-10 max-lg:text-center relative flex items-center justify-center overflow-hidden py-3.5 text-center px-4 font-poppins rounded-full bg-light-green font-semibold text-base text-white !leading-160 transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-deep-sea-green before:duration-500 before:ease-out hover:shadow-bg-deep-sea-green hover:before:h-56 hover:before:w-full">
-                <span className="relative z-0"> Get Started</span>
-              </button>
+              <Cta className="mt-6 w-full custom-sm:w-auto md:mt-10 max-lg:text-center relative flex items-center justify-center">
+                Get Started
+              </Cta>
+              {/* <button className="mt-6 w-full custom-sm:w-auto md:mt-10 max-lg:text-center relative flex items-center justify-center overflow-hidden py-3.5 text-center px-4 font-poppins rounded-full bg-light-green font-semibold text-base text-white !leading-160 transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-deep-sea-green before:duration-500 before:ease-out hover:shadow-bg-deep-sea-green hover:before:h-56 hover:before:w-full">
+                <span className="relative z-0"> </span>
+              </button> */}
             </div>
           </div>
           <div className="w-full lg:w-6/12 max-custom-sm:h-[380px] max-lg:h-[500px] mt-10 lg:mt-0">
