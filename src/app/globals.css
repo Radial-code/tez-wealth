@@ -38,11 +38,14 @@ body {
 .swiper-pagination {
   line-height: 74% !important;
 }
-
+.swiper-wrapper{
+padding-bottom: 40px !important;
+}
 .swiper-pagination-bullet-active {
   background-color: #32CA87 !important;
   opacity: 100 !important;
 }
+
 
 input:-webkit-autofill {
   box-shadow: 0 0 0 1000px white inset !important;

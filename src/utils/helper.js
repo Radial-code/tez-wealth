@@ -23,23 +23,23 @@ export const ABOUT_TEZ_LIST = [
 // SERVICE DATA
 export const SERVICE_DATA_LIST = [
     {
-        bgClass: "bg-service-ai",
+        image:"/assets/images/webp/service-ai.webp",
         description: 'AI-powered financial insights',
     },
     {
-        bgClass: 'bg-service-management',
+        image: '/assets/images/webp/service-management.webp',
         description: 'Comprehensive wealth management',
     },
     {
-        bgClass: 'bg-service-fire',
+        image: '/assets/images/webp/service-fire.webp',
         description: 'FIRE (Financial Independence, Retire Early) planning',
     },
     {
-        bgClass: 'bg-service-interest',
+        image: '/assets/images/webp/service-interest.webp',
         description: 'Interest-earning capabilities',
     },
     {
-        bgClass: 'bg-service-network',
+        image: '/assets/images/webp/service-network.webp',
         description:
             'On-demand access to human advisors⁠⁠ using existing providers and their network.',
     },
