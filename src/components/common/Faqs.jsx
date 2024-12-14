@@ -1,6 +1,28 @@
-import React from 'react'
+import Heading from "../custom-ui/Heading"
 
 const Faqs = () => {
+    const FAQS_DATA_LIST = [
+        {
+            title: "How can a digital agency help my business",
+            description: "A digital agency can help your business establish a strong online presence, increase brand awareness, drive traffic to your website, generate leads, and ultimately increase sales and revenue."
+        },
+        {
+            title: "What factors determine the cost of your services",
+            description: "A digital agency can help your business establish a strong online presence, increase brand awareness, drive traffic to your website, generate leads, and ultimately increase sales and revenue."
+        },
+        {
+            title: "What is SEO, and why is it important for my website",
+            description: "A digital agency can help your business establish a strong online presence, increase brand awareness, drive traffic to your website, generate leads, and ultimately increase sales and revenue."
+        },
+        {
+            title: "Do you provide website maintenance services",
+            description: "A digital agency can help your business establish a strong online presence, increase brand awareness, drive traffic to your website, generate leads, and ultimately increase sales and revenue."
+        },
+        {
+            title: "Do you require long-term contracts",
+            description: "A digital agency can help your business establish a strong online presence, increase brand awareness, drive traffic to your website, generate leads, and ultimately increase sales and revenue."
+        },
+    ]
     return (
         <section id="faq" className="xl:py-40 lg:py-32 md:py-28 py-[100px] relative lg:bg-accordion bg-full">
             <div className="lg:block hidden absolute left-[76px] top-[142px]"><img width="113" height="94"
@@ -14,6 +36,7 @@ const Faqs = () => {
                     className="font-poppins font-normal md:text-5xl text-4xl text-dark-grey !leading-150 text-center pb-10 md:pb-[50px]">
                     FAQ<span className="font-bold text-deep-sea-green">s</span>
                 </h2>
+                <Heading boldText="s" center>FAQ</Heading>
                 <div className="flex flex-col" id="accordion">
                     <div
                         className="accordion-item shadow-accordionWhite cursor-pointer bg-white duration-300 ease-in-out rounded-[191px]">
