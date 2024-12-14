@@ -12,7 +12,7 @@ const AboutTej = () => {
           height={79}
           width={116}
           alt="ellipse"
-          className="absolute max-sm:w-[51px] max-sm:h-[39px] animate-pulse right-[3%] xl:top-[27%] sm:top-[2%] top-[4.5%] -z-10"
+          className="absolute pointer-events-none max-sm:w-[51px] max-sm:h-[39px] animate-pulse right-[3%] xl:top-[27%] sm:top-[2%] top-[4.5%] -z-10"
         />
         <div className="pointer-event-none md:block hidden -z-10 absolute right-[3%] bottom-[-9%] size-[150px] opacity-20 rounded-full blur-[70px] bg-deep-sea-green"></div>
         <div className="container max-w-[1140px] xl:px-0">
@@ -29,7 +29,7 @@ const AboutTej = () => {
                       height={32}
                       width={39}
                       alt={data.description}
-                      className="max-md:size-[30px]"
+                      className="max-md:size-[30px] pointer-events-none"
                     />
                   </div>
                   <p className="lg:py-4 sm:p-2.5 pb-2.5 px-2.5 !leading-160 lg:pr-4 font-poppins font-normal lg:text-base text-sm text-light-black text-opacity-80">

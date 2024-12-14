@@ -11,7 +11,7 @@ const YourFinances = () => {
             </div>
             <div className="absolute lg:right-[66px] -right-5 lg:bottom-10 bottom-3">
                 <Image width="116" height="79"
-                    className="lg:max-w-[116px] lg:h-[79px] max-w-[88px] h-[60px] animate-pulse"
+                    className="lg:max-w-[116px] pointer-events-none lg:h-[79px] max-w-[88px] h-[60px] animate-pulse"
                     src="./assets/images/svg/form-ellipse.svg" alt="form-ellipse" /></div>
             <div className="container px-5 xl:px-0 max-w-[1140px]">
                 <div className="flex flex-wrap items-center justify-between">

@@ -25,7 +25,7 @@ const OurServices = () => {
         height={107}
         width={69}
         alt="service-blue-ellipse"
-        className="absolute md:block hidden bottom-[18%] left-[5%] animate-pulse"
+        className="absolute pointer-events-none md:block hidden bottom-[18%] left-[5%] animate-pulse"
       />
       <div className="size-[150px] rounded-full bg-deep-sea-green blur-[70px] absolute md:block hidden left-[3%] opacity-20 pointer-event-none bottom-[20%]"></div>
       <div className="container max-w-[1140px] xl:px-0">
@@ -45,7 +45,7 @@ const OurServices = () => {
                   height={400}
                   width={364}
                   alt={data.description}
-                  className="rounded-2xl group object-cover max-w-[364px] w-full h-[400px] relative"
+                  className="rounded-2xl pointer-events-none group object-cover max-w-[364px] w-full h-[400px] relative"
                 />
                 <div className="bg-white absolute z-20 left-2.5 right-2.5 bottom-2.5 rounded-2xl h-[84px] px-4 flex justify-center items-center">
                   <Paragraph
@@ -83,7 +83,7 @@ const OurServices = () => {
                     height={400}
                     width={364}
                     alt={data.description}
-                    className="rounded-2xl group max-w-[364px] w-full h-[400px] relative object-cover"
+                    className="rounded-2xl pointer-events-none group max-w-[364px] w-full h-[400px] relative object-cover"
                   />
                   <div className="bg-white absolute z-20 left-2.5 right-2.5 bottom-2.5 rounded-2xl h-[84px] px-4 flex justify-center items-center">
                     <Paragraph

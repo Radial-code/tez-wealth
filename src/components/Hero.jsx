@@ -13,7 +13,7 @@ const Hero = () => {
           height={79}
           width={116}
           alt="hero-ellipse"
-          className="absolute z-[1] start-[-10px] lg:start-3 top-20 lg:top-[115px] max-w-[53px] sm:max-w-[80px] lg:max-w-[116px] animate-pulse"
+          className="absolute pointer-events-none z-[1] start-[-10px] lg:start-3 top-20 lg:top-[115px] max-w-[53px] sm:max-w-[80px] lg:max-w-[116px] animate-pulse"
         />
         <NavBar />
         <Image
@@ -21,7 +21,7 @@ const Hero = () => {
           height={810}
           width={732}
           alt="hero-img"
-          className="max-w-[50%] 2xl:max-w-[45%] w-full z-0 absolute xl:right-0 md:right-[-55px] h-full top-0 max-lg:hidden 2xl:object-fill"
+          className="max-w-[50%] pointer-events-none 2xl:max-w-[45%] w-full z-0 absolute xl:right-0 md:right-[-55px] h-full top-0 max-lg:hidden 2xl:object-fill"
         />
         <div className="container px-5 lg:h-[720px] mx-auto max-w-[1180px] flex flex-wrap items-center  max-lg:h-auto max-lg:pb-3 max-custom-sm:pb-0 max-lg:pt-5">
           <div className="w-full my-auto lg:w-6/12 max-lg:text-center">
@@ -50,14 +50,14 @@ const Hero = () => {
               height={454}
               width={267}
               alt="graph"
-              className="max-w-[260px] w-full custom-sm:max-w-[363px] md:max-w-[470px] relative lg:absolute lg:bottom-10 md:-right-[15%] lg:right-[5%] xl:right-[14%] custom-xl:right-[18%] z-[3] drop-shadow-hero-graph"
+              className="max-w-[260px] pointer-events-none w-full custom-sm:max-w-[363px] md:max-w-[470px] relative lg:absolute lg:bottom-10 md:-right-[15%] lg:right-[5%] xl:right-[14%] custom-xl:right-[18%] z-[3] drop-shadow-hero-graph"
             />
             <Image
               src="/assets/images/webp/small-hero-image.webp"
               height={454}
               width={267}
               alt="hero-image"
-              className="max-w-[353px] custom-sm:max-w-[450px] max-custom-sm:h-[356px] w-full lg:hidden absolute end-0 bottom-[37px]"
+              className="max-w-[353px] pointer-events-none custom-sm:max-w-[450px] max-custom-sm:h-[356px] w-full lg:hidden absolute end-0 bottom-[37px]"
             />
           </div>
         </div>
