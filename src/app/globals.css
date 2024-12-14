@@ -22,8 +22,14 @@ body {
   -webkit-text-stroke: 0.5px white;
 }
 
-.text-stroke-black {
+.text-stroke-blue {
   -webkit-text-stroke: 0.5px #003840;
+}
+
+@media (max-width: 640px) {
+  .text-stroke-blue {
+    -webkit-text-stroke: 0.2px #003840;
+  }
 }
 
 .swiper-pagination-bullet {

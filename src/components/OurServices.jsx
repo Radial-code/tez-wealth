@@ -83,7 +83,7 @@ const OurServices = () => {
                     height={400}
                     width={364}
                     alt={data.description}
-                    className="rounded-2xl group max-w-[364px] w-full h-[400px] relative"
+                    className="rounded-2xl group max-w-[364px] w-full h-[400px] relative object-contain"
                   />
                   <div className="bg-white absolute z-20 left-2.5 right-2.5 bottom-2.5 rounded-2xl h-[84px] px-4 flex justify-center items-center">
                     <Paragraph

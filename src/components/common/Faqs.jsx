@@ -43,11 +43,11 @@ const Faqs = () => {
                                     className={`sm:ps-[32px] sm:pe-5 pl-[15px] pr-[10px] py-5 max-sm:py-[15px] flex justify-between items-center duration-300 w-full sm:gap-8 ${isActive ? "pb-0" : "pb-5"}`}>
                                     <div className={`flex gap-3 transition-all duration-300 items-center ${isActive ? "max-custom-sm:!items-start" : ""}`}>
                                         <Paragraph darkBlue semibold xxl leadingFull
-                                            className={`transition-all duration-300 ${isActive ? "text-light-green" : "text-deep-sea-green"}`}>0{index + 1}
+                                            className={`transition-all duration-300 max-lg:!text-2xl ${isActive ? "text-light-green" : "text-deep-sea-green"}`}>0{index + 1}
                                         </Paragraph>
                                         <Paragraph medium xxl className={`transition-all font-medium duration-300 ${isActive
-                                            ? "text-stroke-black"
-                                            : "text-light-grey font-medium"}`}>
+                                            ? "text-stroke-blue text-deep-sea-green"
+                                            : "text-light-black font-medium opacity-80"}`}>
                                             {item.title}
                                         </Paragraph>
                                     </div>
@@ -59,8 +59,8 @@ const Faqs = () => {
                                 </button>
                                 <div className={`overflow-hidden grid transition-all duration-500 ${isActive ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"}`}>
                                     <div className="overflow-hidden">
-                                        <Paragraph leadingFull
-                                            className="md:pt-[6px] max-sm:pt-0 pb-5 md:pb-5 md:pe-2 pe-0 md:ps-[70px] ps-12 custom-sm:max-w-[891px] max-w-[315px]">
+                                        <Paragraph
+                                            className="md:pt-[6px] opacity-80 !leading-160 max-sm:pt-0 pb-5 md:pb-5 md:pe-2 pe-0 md:ps-[70px] ps-12 custom-sm:max-w-[891px] max-w-[315px]">
                                             {item.description}
                                         </Paragraph>
                                     </div>

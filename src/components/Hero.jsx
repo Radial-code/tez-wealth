@@ -29,13 +29,11 @@ const Hero = () => {
               <Icons icon="heroIcon" />
               <span>Welcome to Tez Wealth</span>
             </p>
-            <h1 className="xl:text-6xl md:text-5xl text-4xl text-off-green font-poppins !leading-110 pt-5 pb-3.5 md:py-4">
+            <h1 className="xl:text-6xl md:text-5xl text-4xl text-dark-grey font-poppins !leading-110 pt-5 pb-3.5 md:py-4">
               Achieve Financial Freedom with
-              <span className="font-bold text-deep-sea-green">
-                AI-Powered Insights
-              </span>
+              <span className="font-bold text-deep-sea-green"> AI-Powered Insights</span>
             </h1>
-            <Paragraph className="text-base md:text-lg max-lg:!text-center lg:text-xl !leading-163 text-light-black text-opacity-90 max-w-[558px] max-lg:mx-auto">
+            <Paragraph className="text-base md:text-lg max-lg:!text-center lg:text-xl !leading-163 text-light-black text-opacity-90 max-w-[450px] xl:max-w-[558px] max-lg:mx-auto">
               {" "}
               AI-driven personal finance and wealth management for high net
               worth individuals and HENRYs

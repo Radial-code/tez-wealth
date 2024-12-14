@@ -76,7 +76,7 @@ const Form = () => {
             <Cta
                 type="submit"
                 aria-label="submit"
-                className="w-full !mt-5 md:!mt-[30px]"
+                className="w-full !mt-5 md:!mt-[30px] max-sm:!py-2 max-custom-sm:!text-[9px]"
             >
                 <span className="relative">Send Message</span>
             </Cta>
