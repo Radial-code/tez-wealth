@@ -56,8 +56,8 @@ const Footer = () => {
                 </div>
             </div>
             <p
-                className="py-4 border-t border-white font-poppins font-normal sm:text-base !leading-160 text-sm max-sm:max-w-[223px] mx-auto text-opacity-80 text-white text-center">
-                copyright ©{new Date().getFullYear()} Tez Wealth | All rights reserved</p>
+                className="py-4 border-t border-white font-poppins font-normal sm:text-base !leading-160 text-sm flex justify-center w-full text-opacity-80 text-white text-center">
+                copyright ©{new Date().getFullYear()} Tez Wealth | All <br className='sm:hidden'/> rights reserved</p>
         </footer>
     )
 }
