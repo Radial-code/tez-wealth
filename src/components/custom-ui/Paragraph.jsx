@@ -1,5 +1,5 @@
 
-const Paragraph = ({ children, className, medium, semibold, bold, darkBlue, sm, lg, xl, xxl, leadingFull }) => {
+const Paragraph = ({ children, className, medium, semibold, bold, darkBlue, sm, lg, xl, xxl, leadingFull, center }) => {
 
   const fontSize = medium ? "font-medium" : semibold ? "font-medium" : bold ? "font-bold" : "font-normal"
   const textColor = darkBlue ? "deep-sea-green" : "light-black"
