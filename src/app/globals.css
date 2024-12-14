@@ -19,7 +19,7 @@ body {
 .text-stroke:hover {
   -webkit-text-stroke: 0.5px white;
 }
-.custom-pagination .swiper-pagination-bullet {
+.swiper-pagination-bullet {
   width: 16px !important;
   height: 16px !important;
   background-color: #CCD7D9 !important; 
@@ -30,11 +30,14 @@ body {
 .swiper-pagination{
 line-height: 74% !important;
 }
-
-.custom-pagination .swiper-pagination-bullet-active{
+.swiper-wrapper{
+padding-bottom: 40px !important;
+}
+.swiper-pagination-bullet-active {
   background-color: #32CA87 !important;
   opacity: 100 !important;
 }
+
 
 input:-webkit-autofill {
   box-shadow: 0 0 0 1000px white inset !important;

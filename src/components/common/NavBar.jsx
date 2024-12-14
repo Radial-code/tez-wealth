@@ -14,8 +14,8 @@ const NavBar = () => {
        }
      }
     return (
-      <nav class="py-2 sm:py-[13px] bg-nav-background bg-no-repeat bg-header lg:bg-deep-sea-green">
-        <div class="containter px-5 xl:px-0 mx-auto max-w-[1140px] flex justify-between items-center relative z-10">
+      <nav className="py-2 sm:py-[13px] bg-nav-background bg-no-repeat bg-header lg:bg-deep-sea-green">
+        <div className="containter px-5 xl:px-0 mx-auto max-w-[1140px] flex justify-between items-center relative z-10">
           <a href="#">
             <Image
               src="/assets/images/webp/logo.webp"
@@ -36,14 +36,14 @@ const NavBar = () => {
                   onClick={showNav}
                   href={data.url}
                   onclick="toggleMenu()"
-                  class="text-white font-poppins text-lg lg:text-base !leading-160 text-opacity-90 hover:text-opacity-100 text-stroke duration-300 relative after:absolute after:w-0 after:h-1 after:rounded-full after:-bottom-1 after:start-1/2 after:-translate-x-1/2 after:bg-white hover:after:w-[80%] after:duration-300"
+                  className="text-white font-poppins text-lg lg:text-base !leading-160 text-opacity-90 hover:text-opacity-100 text-stroke duration-300 relative after:absolute after:w-0 after:h-1 after:rounded-full after:-bottom-1 after:start-1/2 after:-translate-x-1/2 after:bg-white hover:after:w-[80%] after:duration-300"
                 >
                   {data.link}
                 </a>
               </li>
             ))}
             <li
-              class="absolute top-3 end-5 cursor-pointer lg:hidden"
+              className="absolute top-3 end-5 cursor-pointer lg:hidden"
               onClick={showNav}
             >
               <svg
@@ -59,19 +59,19 @@ const NavBar = () => {
                 />
               </svg>
             </li>
-            <li class="lg:hidden">
+            <li className="lg:hidden">
               {" "}
               <button
                 onClick={showNav}
                 href="#contact"
-                class="relative flex items-center justify-center overflow-hidden py-3.5  text-center px-4 font-poppins rounded-full bg-light-green font-semibold text-base text-white !leading-160 transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-deep-sea-green before:duration-500 before:ease-out hover:shadow-bg-deep-sea-green hover:before:h-56 hover:before:w-full"
+                className="relative flex items-center justify-center overflow-hidden py-3.5  text-center px-4 font-poppins rounded-full bg-light-green font-semibold text-base text-white !leading-160 transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-deep-sea-green before:duration-500 before:ease-out hover:shadow-bg-deep-sea-green hover:before:h-56 hover:before:w-full"
               >
-                <span class="relative z-10">Contact us</span>
+                <span className="relative z-10">Contact us</span>
               </button>
             </li>
           </ul>
           <div
-            class="cursor-pointer lg:hidden relative z-[4]"
+            className="cursor-pointer lg:hidden relative z-[4]"
             onClick={showNav}
           >
             <svg
@@ -89,9 +89,9 @@ const NavBar = () => {
           </div>
           <button
             href="#contact"
-            class="relative flex items-center max-lg:hidden justify-center overflow-hidden py-3.5 text-center px-4 font-poppins rounded-full bg-light-green font-semibold text-base text-white !leading-160 transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-deep-sea-green before:duration-500 before:ease-out hover:shadow-bg-deep-sea-green hover:before:h-56 hover:before:w-full hover:border-white border-transparent border transition-all ease-linear duration-500"
+            className="relative flex items-center max-lg:hidden justify-center overflow-hidden py-3.5 text-center px-4 font-poppins rounded-full bg-light-green font-semibold text-base text-white !leading-160 transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-deep-sea-green before:duration-500 before:ease-out hover:shadow-bg-deep-sea-green hover:before:h-56 hover:before:w-full hover:border-white border-transparent border transition-all ease-linear duration-500"
           >
-            <span class="relative z-10">Contact us</span>
+            <span className="relative z-10">Contact us</span>
           </button>
         </div>
       </nav>

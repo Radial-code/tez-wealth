@@ -2,6 +2,7 @@
 import { SERVICE_DATA_LIST } from "@/utils/helper";
 import Image from "next/image";
 import React from "react";
+import {Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -35,9 +36,14 @@ const OurServices = () => {
         <div className="flex max-lg:hidden flex-wrap justify-center -mx-3 flex-row">
           {SERVICE_DATA_LIST.map((data, index) => (
             <div key={index} className="w-1/3 xl:px-3 px-2 pt-6">
-              <div
-                className={`rounded-2xl group max-w-[364px] h-[400px] relative ${data.bgClass} bg-cover bg-no-repeat`}
-              >
+              <div className="rounded-2xl group max-w-[364px] h-[400px] relative">
+                <Image
+                  src={data.image}
+                  height={400}
+                  width={364}
+                  alt={data.description}
+                  className="rounded-2xl group object-cover max-w-[364px] w-full h-[400px] relative"
+                />
                 <div className="bg-white absolute z-20 left-2.5 right-2.5 bottom-2.5 rounded-2xl h-[84px] px-4 flex justify-center items-center">
                   <p className="font-poppins font-normal text-base text-light-black text-opacity-70 !leading-160 text-center">
                     {data.description}
@@ -51,22 +57,28 @@ const OurServices = () => {
         <div className="hidden max-lg:block">
           <Swiper
             spaceBetween={16}
-            slidesPerView={1.2}
+            slidesPerView={1}
             loop={true}
-            pagination={{
-              clickable: true,
-              dynamicBullets: true, // Optional for dynamic effects
-            }}
+            modules={[Pagination]}
+            pagination={{ clickable: true }}
             breakpoints={{
-              640: { slidesPerView: 1.5 },
-              768: { slidesPerView: 2 },
+              450: { slidesPerView: 1.3 },
+              500: { slidesPerView: 1.6 },
+              640: { slidesPerView: 2 },
+              768: { slidesPerView: 2.5 },
+              992: { slidesPerView: 3 },
             }}
           >
             {SERVICE_DATA_LIST.map((data, index) => (
               <SwiperSlide key={index}>
-                <div
-                  className={`rounded-2xl group max-w-[364px] h-[400px] relative ${data.bgClass} bg-cover bg-no-repeat`}
-                >
+                <div className="rounded-2xl group max-w-[364px] h-[400px] relative">
+                  <Image
+                    src={data.image}
+                    height={400}
+                    width={364}
+                    alt={data.description}
+                    className="rounded-2xl group max-w-[364px] w-full h-[400px] relative"
+                  />
                   <div className="bg-white absolute z-20 left-2.5 right-2.5 bottom-2.5 rounded-2xl h-[84px] px-4 flex justify-center items-center">
                     <p className="font-poppins font-normal text-base text-light-black text-opacity-70 !leading-160 text-center">
                       {data.description}
@@ -77,7 +89,7 @@ const OurServices = () => {
               </SwiperSlide>
             ))}
           </Swiper>
-          <div className="my-custom-pagination text-center mt-4"></div>
+          <div className="swiper-pagination !mt-7"></div>
         </div>
       </div>
     </div>

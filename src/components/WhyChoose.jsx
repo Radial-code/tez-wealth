@@ -5,6 +5,13 @@ const WhyChoose = () => {
     return (
       <div className="md:py-20 lg:bg-horizontal bg-full py-[50px] bg-sky-blue z-0 overflow-x-clip relative">
         <Image
+          src="./assets/images/svg/wealth-green-ellipse.svg"
+          height={79}
+          width={116}
+          alt="wealth-green-ellipse"
+          className="custom-sm:right-[2%] right-[-3%] max-sm:w-[88px] absolute sm:top-[18%] top-[-9%] animate-pulse"
+        />
+        <Image
           src="/assets/images/webp/wealth-sky-ellipse.webp"
           height={600}
           width={463}
@@ -12,8 +19,8 @@ const WhyChoose = () => {
           className="absolute md:block h-[730px] hidden -z-10 left-0 bottom-0"
         />
         <div className="max-w-[840px] mx-auto xl:px-0 px-5">
-          <h2 class="font-poppins text-center max-custom-sm:mb-[50px] mb-[38px] max-md:text-center !leading-150 lg:text-5xl text-4xl text-deep-sea-green font-bold">
-            <span class="font-normal text-light-black text-opacity-90">
+          <h2 className="font-poppins text-center max-custom-sm:mb-[50px] mb-[38px] max-md:text-center !leading-150 lg:text-5xl text-4xl text-deep-sea-green font-bold">
+            <span className="font-normal text-light-black text-opacity-90">
               Why Choose{" "}
             </span>
             Tez Wealth?
@@ -47,7 +54,7 @@ const WhyChoose = () => {
                         : "justify-end max-custom-sm:gap-3.5"
                     }`}
                   >
-                    {itemIndex % 2 !== 0 ? ( 
+                    {itemIndex % 2 !== 0 ? (
                       <>
                         <img
                           src={item.icon}
@@ -82,7 +89,6 @@ const WhyChoose = () => {
           </div>
         </div>
       </div>
-     
     );
 }
 
