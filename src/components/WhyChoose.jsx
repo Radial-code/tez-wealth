@@ -25,7 +25,7 @@ const WhyChoose = () => {
             </span>
             Tez Wealth?
           </h2>
-          <div>
+          <div className="max-sm:max-w-[400px] max-sm:mx-auto">
             {WEALTH_DATA.map((data, index) => (
               <div key={index} className="relative">
                 {data.leftImage && (
