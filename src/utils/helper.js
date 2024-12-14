@@ -89,7 +89,7 @@ export const WEALTH_DATA = [
 export const NAV_LINK_LIST = [
     {
         link: "Home",
-        url:HOME_LINK_PATH
+        url: HOME_LINK_PATH
     },
     {
         link: "About Tez Wealth",
@@ -108,3 +108,27 @@ export const NAV_LINK_LIST = [
         url: FAQ_LINK_PATH
     },
 ]
+
+
+export const FAQS_DATA_LIST = [
+    {
+        title: "How can a digital agency help my business",
+        description: "A digital agency can help your business establish a strong online presence, increase brand awareness, drive traffic to your website, generate leads, and ultimately increase sales and revenue."
+    },
+    {
+        title: "What factors determine the cost of your services",
+        description: "A digital agency can help your business establish a strong online presence, increase brand awareness, drive traffic to your website, generate leads, and ultimately increase sales and revenue."
+    },
+    {
+        title: "What is SEO, and why is it important for my website",
+        description: "A digital agency can help your business establish a strong online presence, increase brand awareness, drive traffic to your website, generate leads, and ultimately increase sales and revenue."
+    },
+    {
+        title: "Do you provide website maintenance services",
+        description: "A digital agency can help your business establish a strong online presence, increase brand awareness, drive traffic to your website, generate leads, and ultimately increase sales and revenue."
+    },
+    {
+        title: "Do you require long-term contracts",
+        description: "A digital agency can help your business establish a strong online presence, increase brand awareness, drive traffic to your website, generate leads, and ultimately increase sales and revenue."
+    },
+];

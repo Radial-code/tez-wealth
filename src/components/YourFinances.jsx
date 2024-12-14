@@ -1,5 +1,6 @@
 import React from 'react'
 import Form from './common/Form'
+import Heading from './custom-ui/Heading'
 
 const YourFinances = () => {
     return (
@@ -15,9 +16,10 @@ const YourFinances = () => {
                     <div className="lg:w-[43%] md:w-1/2 w-full xl:px-3 sm:pr-3 px-0 max-md:flex flex-col justify-center items-center">
                         <h2
                             className="font-poppins font-normal lg:text-5xl text-4xl !leading-140 text-dark-grey max-w-[501px] lg:pb-[10px] pb-2 max-custom-sm:max-w-[276px] max-md:text-center">
-                            We’re Here to Help You Take Control of <span className="text-deep-sea-green font-bold">Your
-                                Finances</span>
+                            <span className="text-deep-sea-green font-bold"></span>
                         </h2>
+                        <Heading boldText="Your
+                                Finances">We’re Here to Help You Take Control of </Heading>
                         <p className="font-poppins font-normal text-base leading-160 text-light-black opacity-80 max-md:text-center">
                             Have
                             questions? Reach out to our team for support and personalized assistance.</p>

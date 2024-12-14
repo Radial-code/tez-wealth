@@ -8,6 +8,7 @@ html,
 body {
   scroll-behavior: smooth;
 }
+
 ::-webkit-scrollbar {
   width: 4px;
   height: 4px;
@@ -16,19 +17,26 @@ body {
 ::-webkit-scrollbar-thumb {
   background: #32CA87;
 }
+
 .text-stroke:hover {
   -webkit-text-stroke: 0.5px white;
 }
+
+.text-stroke-black {
+  -webkit-text-stroke: 0.5px #003840;
+}
+
 .swiper-pagination-bullet {
   width: 16px !important;
   height: 16px !important;
-  background-color: #CCD7D9 !important; 
+  background-color: #CCD7D9 !important;
   opacity: 100 !important;
-    margin: 0 5px;
-    line-height: 74% !important;
+  margin: 0 5px;
+  line-height: 74% !important;
 }
-.swiper-pagination{
-line-height: 74% !important;
+
+.swiper-pagination {
+  line-height: 74% !important;
 }
 
 .swiper-pagination-bullet-active {
@@ -40,20 +48,24 @@ input:-webkit-autofill {
   box-shadow: 0 0 0 1000px white inset !important;
   -webkit-text-fill-color: black !important;
 }
+
 .custom-select.open .select-options {
-    display: block;
+  display: block;
 }
+
 .custom-select.open .select-arrow {
-    transform: rotate(180deg);
+  transform: rotate(180deg);
 }
-.custom-select-wrapper:focus{
-outline: 2px solid red !important;
-border-color: greenyellow;
+
+.custom-select-wrapper:focus {
+  outline: 2px solid red !important;
+  border-color: greenyellow;
 }
 
 .focus\:border-dark-sea-green:focus {
-    border: 1px solid #003840;
+  border: 1px solid #003840;
 }
- :focus{
-     outline: none;
+
+:focus {
+  outline: none;
 }
