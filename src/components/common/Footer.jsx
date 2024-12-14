@@ -36,7 +36,7 @@ const Footer = () => {
                             <div className="flex justify-between w-full flex-wrap flex-row -mx-3">
                                 {FOOTER_LINKS_DATA_LIST.map((section, sectionIndex) => (
                                     <div key={sectionIndex} className="w-1/2 max-xl:px-3 px-2 max-sm:pl-0 max-sm:pr-5">
-                                        <ul className="flex flex-col gap-4">
+                                        <ul className="flex flex-col gap-4 lg:-ml-7">
                                             <li className="text-white font-poppins text-base font-semibold !leading-150">
                                                 {section.title}
                                             </li>

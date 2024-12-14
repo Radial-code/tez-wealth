@@ -5,7 +5,7 @@ import Paragraph from './custom-ui/Paragraph'
 
 const YourFinances = () => {
     return (
-        <section id="contact" className="xl:pb-40 lg:pb-32 md:pb-28 pb-[100px] relative overflow-x-clip lg:bg-accordion bg-full">
+        <section id="contact" className="xl:pb-40 lg:pb-32 md:pb-24 pb-[100px] relative overflow-x-clip lg:bg-accordion bg-full">
             <div
                 className="size-[150px] rounded-full bg-deep-sea-green blur-[70px] absolute md:block hidden left-0 opacity-20 pointer-event-none top-[-21%]">
             </div>
@@ -20,7 +20,7 @@ const YourFinances = () => {
                                 Finances">We’re Here to Help You Take Control of </Heading>
                         <Paragraph className="!leading-160 !opacity-80 max-md:!text-center">Have questions? Reach out to our team for support and personalized assistance.</Paragraph>
                     </div>
-                    <div className="md:w-1/2 w-full xl:px-0 px-0 lg:mt-0 mt-10">
+                    <div className="md:w-1/2 w-full xl:px-0 px-0 lg:mt-0 max-md:mt-10">
                         <Form />
                     </div>
                 </div>
