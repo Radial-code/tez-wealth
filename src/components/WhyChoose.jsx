@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const WhyChoose = () => {
     return (
-      <div className="md:py-20 lg:bg-horizontal bg-full py-[50px] bg-sky-blue z-0 overflow-x-clip relative">
+      <div id="choose" className="md:py-20 lg:bg-horizontal bg-full py-[50px] bg-sky-blue z-0 overflow-x-clip relative">
         <Image
           src="./assets/images/svg/wealth-green-ellipse.svg"
           height={79}
@@ -29,17 +29,21 @@ const WhyChoose = () => {
             {WEALTH_DATA.map((data, index) => (
               <div key={index} className="relative">
                 {data.leftImage && (
-                  <img
+                  <Image
                     src={data.leftImage}
+                    height={80}
+                    width={80}
                     alt="left-decor"
-                    className="absolute md:bottom-[-28%] max-custom-sm:block custom-md:block hidden bottom-[-36%] max-sm:-rotate-[9deg] left-0 -z-10 md:left-[48%] md:right-1/2 md:-translate-x-1/2"
+                    className="absolute max-sm:size-[72px] md:bottom-[-28%] max-custom-sm:block custom-md:block hidden bottom-[-36%] max-sm:-rotate-[9deg] left-0 -z-10 md:left-[48%] md:right-1/2 md:-translate-x-1/2"
                   />
                 )}
                 {data.rightImage && (
-                  <img
+                  <Image
                     src={data.rightImage}
+                    height={80}
+                    width={80}
                     alt="right-decor"
-                    className="absolute top-[24%] max-custom-sm:block custom-md:block hidden -z-10 md:left-[52%] max-sm:rotate-[9deg] left-[3%] md:right-1/2 md:-translate-x-1/2"
+                    className="absolute max-sm:size-[72px] top-[20%] max-custom-sm:block custom-md:block hidden -z-10 md:left-[52%] max-sm:rotate-[9deg] left-[3%] md:right-1/2 md:-translate-x-1/2"
                   />
                 )}
 
@@ -56,10 +60,12 @@ const WhyChoose = () => {
                   >
                     {itemIndex % 2 !== 0 ? (
                       <>
-                        <img
+                        <Image
                           src={item.icon}
-                          className="w-[50px] md:w-[73px] md:h-[73px] max-custom-sm:ml-[31px] h-[50px] rounded-full"
+                          height={73}
+                          width={73}
                           alt="icon"
+                          className="w-[50px] md:w-[73px] md:h-[73px] max-custom-sm:ml-[31px] h-[50px] rounded-full"
                         />
                         <p className="font-medium text-base max-w-[311px] !leading-150  font-poppins text-light-black">
                           {item.text}
@@ -67,18 +73,22 @@ const WhyChoose = () => {
                       </>
                     ) : (
                       <>
-                        <img
+                        <Image
                           src={item.icon}
-                          className="w-[50px] sm:hidden block md:w-[73px] md:h-[73px] h-[50px] rounded-full"
+                          height={73}
+                          width={73}
                           alt="icon"
+                          className="w-[50px] sm:hidden block md:w-[73px] md:h-[73px] h-[50px] rounded-full"
                         />
                         <p className="font-medium text-base max-w-[311px] !leading-150 sm:text-right font-poppins text-light-black">
                           {item.text}
                         </p>
-                        <img
+                        <Image
                           src={item.icon}
-                          className="w-[50px] sm:block hidden md:w-[73px] md:h-[73px] h-[50px] rounded-full"
+                          height={73}
+                          width={73}
                           alt="icon"
+                          className="w-[50px] sm:block hidden md:w-[73px] md:h-[73px] h-[50px] rounded-full"
                         />
                       </>
                     )}
