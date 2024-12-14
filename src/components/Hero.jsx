@@ -44,7 +44,7 @@ const Hero = () => {
               </Cta>
             </div>
           </div>
-          <div className="w-full lg:w-6/12 max-custom-sm:h-[380px] max-lg:h-[500px] mt-10 lg:mt-0">
+          <div className="w-full lg:w-6/12 max-custom-sm:h-[370px] max-lg:h-[500px] mt-10 lg:mt-0">
             <Image
               src="/assets/images/webp/graph.webp"
               height={454}
@@ -57,7 +57,7 @@ const Hero = () => {
               height={454}
               width={267}
               alt="hero-image"
-              className="max-w-[353px] custom-sm:max-w-[450px] max-custom-sm:h-[356px] w-full lg:hidden absolute end-0 bottom-[43px]"
+              className="max-w-[353px] custom-sm:max-w-[450px] max-custom-sm:h-[356px] w-full lg:hidden absolute end-0 bottom-[37px]"
             />
           </div>
         </div>

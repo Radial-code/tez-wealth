@@ -24,11 +24,11 @@ const NavBar = () => {
             height={39}
             width={207}
             alt="navlogo"
-            className="max-w-[139px] sm:max-w-[170px] lg:max-w-[207px] w-full"
+            className="max-w-[139px] sm:max-w-[170px] lg:max-w-[190px] xl:max-w-[207px] w-full"
           />
         </a>
         <ul
-          className={`flex items-center gap-4 xl:gap-6 max-lg:z-10 max-lg:justify-center max-lg:flex-col max-lg:fixed max-lg:right-0 max-lg:top-0 max-lg:bg-deep-sea-green max-lg:w-full max-lg:h-screen  duration-300 ${show ? "max-lg:translate-x-full" : "max-lg:translate-x-0"
+          className={`flex xl:ml-8 items-center gap-4 xl:gap-6 max-lg:z-10 max-lg:justify-center max-lg:flex-col max-lg:fixed max-lg:right-0 max-lg:top-0 max-lg:bg-deep-sea-green max-lg:w-full max-lg:h-screen  duration-300 ${show ? "max-lg:translate-x-full" : "max-lg:translate-x-0"
             }`}
         >
           {NAV_LINK_LIST.map((data, index) => (

@@ -71,19 +71,19 @@ const OurServices = () => {
               450: { slidesPerView: 1.3 },
               500: { slidesPerView: 1.6 },
               640: { slidesPerView: 2 },
-              768: { slidesPerView: 2.5 },
+              768: { slidesPerView: 2.3 },
               992: { slidesPerView: 3 },
             }}
           >
             {SERVICE_DATA_LIST.map((data, index) => (
               <SwiperSlide key={index}>
-                <div className="rounded-2xl group max-w-[364px] h-[400px] relative">
+                <div className="rounded-2xl group max-w-[364px] relative">
                   <Image
                     src={data.image}
                     height={400}
                     width={364}
                     alt={data.description}
-                    className="rounded-2xl group max-w-[364px] w-full h-[400px] relative object-contain"
+                    className="rounded-2xl group max-w-[364px] w-full h-[400px] relative object-cover"
                   />
                   <div className="bg-white absolute z-20 left-2.5 right-2.5 bottom-2.5 rounded-2xl h-[84px] px-4 flex justify-center items-center">
                     <Paragraph
