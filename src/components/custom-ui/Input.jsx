@@ -11,7 +11,7 @@ const Input = ({ textArea, select, className, placeholder, type, name, errors, c
                     placeholder={placeholder}
                 />
             ) : select ? (
-                <select {...props} className={`${className} ${commonClass} p-4`} name={name}>
+                <select {...props} className={`${className} ${commonClass} max-sm:!py-2 p-4 custom-select`} name={name}>
                     {children}
                 </select>
             ) : (

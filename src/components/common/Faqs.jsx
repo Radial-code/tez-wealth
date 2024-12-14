@@ -38,7 +38,7 @@ const Faqs = () => {
                         const isActive = activeIndex === index;
 
                         return (
-                            <div key={index} className={`shadow-accordionWhite rounded-full cursor-pointer transition-all duration-100 ${isActive ? "bg-sky-blue  !rounded-2xl" : "bg-white"}`}>
+                            <div key={index} className={`shadow-accordionWhite rounded-full cursor-pointer transition-all duration-0 md:duration-100 ${isActive ? "bg-sky-blue  !rounded-2xl" : "bg-white"}`}>
                                 <button onClick={() => toggleAccordion(index)}
                                     className={`sm:ps-[32px] sm:pe-5 pl-[15px] pr-[10px] py-5 max-sm:py-[15px] flex justify-between items-center duration-300 w-full sm:gap-8 ${isActive ? "pb-0" : "pb-5"}`}>
                                     <div className={`flex gap-3 transition-all duration-300 items-center ${isActive ? "max-custom-sm:!items-start" : ""}`}>
