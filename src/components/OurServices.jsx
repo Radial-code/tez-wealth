@@ -55,9 +55,7 @@ const OurServices = () => {
             loop={true}
             pagination={{
               clickable: true,
-              el: ".custom-pagination", // Assign your custom pagination element
-              bulletClass: "swiper-pagination-bullet", // Default class for bullets
-              bulletActiveClass: "swiper-pagination-bullet-active", // Class for active bullet
+              dynamicBullets: true, // Optional for dynamic effects
             }}
             breakpoints={{
               640: { slidesPerView: 1.5 },
@@ -79,6 +77,7 @@ const OurServices = () => {
               </SwiperSlide>
             ))}
           </Swiper>
+          <div className="my-custom-pagination text-center mt-4"></div>
         </div>
       </div>
     </div>
