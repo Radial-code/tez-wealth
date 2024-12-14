@@ -1,4 +1,5 @@
 import Heading from "../custom-ui/Heading"
+import Paragraph from "../custom-ui/Paragraph"
 
 const Faqs = () => {
     const FAQS_DATA_LIST = [
@@ -32,11 +33,8 @@ const Faqs = () => {
             <div className="lg:hidden block absolute left-0 top-[62px]"><img width="88" height="60" className="max-w-[88px] h-[60px]"
                 src="./assets/images/svg/accordion-mobile-ellipse.svg" alt="accordion-mobile-ellip" /></div>
             <div className="sm:container lg:max-w-[966px] mx-auto px-5 xl:px-0">
-                <h2
-                    className="font-poppins font-normal md:text-5xl text-4xl text-dark-grey !leading-150 text-center pb-10 md:pb-[50px]">
-                    FAQ<span className="font-bold text-deep-sea-green">s</span>
-                </h2>
-                <Heading boldText="s" center>FAQ</Heading>
+                <Heading boldText="s" center className="pb-10 md:pb-[50px]">FAQ</Heading>
+                <Paragraph>Deepak</Paragraph>
                 <div className="flex flex-col" id="accordion">
                     <div
                         className="accordion-item shadow-accordionWhite cursor-pointer bg-white duration-300 ease-in-out rounded-[191px]">
