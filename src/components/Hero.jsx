@@ -47,13 +47,6 @@ const Hero = () => {
             </div>
           </div>
           <div className="w-full lg:w-6/12 max-custom-sm:h-[380px] max-lg:h-[500px] mt-10 lg:mt-0">
-            {/* <Image
-              src="/assets/images/webp/hero-img.webp"
-              height={810}
-              width={732}
-              alt="hero-img"
-              className="max-w-[60%] max-2xl:max-w-[50%] w-full z-0 absolute xl:right-0 md:right-[-55px] h-full top-0 max-lg:hidden 2xl:object-fill"
-            /> */}
             <Image
               src="/assets/images/webp/graph.webp"
               height={454}
