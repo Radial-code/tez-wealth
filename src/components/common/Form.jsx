@@ -60,7 +60,7 @@ const Form = () => {
                 errors={errors.subject}
                 {...register("subject", { required: "Subject is required" })}
             >
-                <option value="">Select a subject</option>
+                <option value="">Subject</option>
                 <option value="General Inquiry">General Inquiry</option>
                 <option value="Feedback">Feedback</option>
                 <option value="Support">Support</option>

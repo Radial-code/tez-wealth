@@ -38,9 +38,11 @@ body {
 .swiper-pagination {
   line-height: 74% !important;
 }
-.swiper-wrapper{
-padding-bottom: 40px !important;
+
+.swiper-wrapper {
+  padding-bottom: 40px !important;
 }
+
 .swiper-pagination-bullet-active {
   background-color: #32CA87 !important;
   opacity: 100 !important;
@@ -71,4 +73,15 @@ input:-webkit-autofill {
 
 :focus {
   outline: none;
+}
+
+.custom-select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url('/assets/images/svg/select-arrow.svg');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 24px;
+  padding-right: 30px;
 }

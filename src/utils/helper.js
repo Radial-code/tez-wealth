@@ -1,4 +1,4 @@
-import { ABOUT_LINK_PATH, CHOOSE_LINK_PATH, FAQ_LINK_PATH, HOME_LINK_PATH, SERVICE_LINK_PATH } from "./constants";
+import { ABOUT_LINK_PATH, CHOOSE_LINK_PATH, CONTACT_LINK_PATH, FAQ_LINK_PATH, HOME_LINK_PATH, INSTAGRAM_PATH_URL, LINKEDIN_PATH_URL, SERVICE_LINK_PATH, TWITTER_PATH_URL } from "./constants";
 
 // /ABOUT DATA
 export const ABOUT_TEZ_LIST = [
@@ -23,7 +23,7 @@ export const ABOUT_TEZ_LIST = [
 // SERVICE DATA
 export const SERVICE_DATA_LIST = [
     {
-        image:"/assets/images/webp/service-ai.webp",
+        image: "/assets/images/webp/service-ai.webp",
         description: 'AI-powered financial insights',
     },
     {
@@ -130,5 +130,46 @@ export const FAQS_DATA_LIST = [
     {
         title: "Do you require long-term contracts",
         description: "A digital agency can help your business establish a strong online presence, increase brand awareness, drive traffic to your website, generate leads, and ultimately increase sales and revenue."
+    },
+];
+
+export const SOCAL_MEDIA_DATA_LIST = [
+    {
+        href: LINKEDIN_PATH_URL,
+        imgSrc: "/assets/images/svg/linkdin.svg",
+        alt: "LinkedIn",
+    },
+    {
+        href: TWITTER_PATH_URL,
+        imgSrc: "/assets/images/svg/twitter.svg",
+        alt: "Twitter",
+    },
+    {
+        href: INSTAGRAM_PATH_URL,
+        imgSrc: "/assets/images/svg/instagram.svg",
+        alt: "Instagram",
+    },
+];
+
+export const FOOTER_LINKS_DATA_LIST = [
+    {
+        title: "Home",
+        links: [
+            { text: "About Tez Wealth", href: ABOUT_LINK_PATH },
+            { text: "Our Services", href: SERVICE_LINK_PATH },
+            { text: "Why Choose Tez Wealth?", href: CHOOSE_LINK_PATH },
+            { text: "FAQs", href: FAQ_LINK_PATH },
+            { text: "Contact", href: CONTACT_LINK_PATH },
+        ],
+    },
+    {
+        title: "Quick Links",
+        links: [
+            { text: "Features", href: "" },
+            { text: "Blog", href: "" },
+            { text: "Demo", href: "" },
+            { text: "Privacy Policy", href: "" },
+            { text: "Terms of Service", href: "" },
+        ],
     },
 ];
