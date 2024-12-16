@@ -13,8 +13,14 @@ const Footer = () => {
                     <div className="flex flex-row custom-sm:justify-between justify-center flex-wrap -mx-3">
                         <div
                             className="lg:w-4/12 max-sm:pb-[54px] xl:px-0 px-3 max-sm:flex max-sm:flex-col max-custom-sm:items-center max-sm:justify-center sm:w-1/2">
-                            <Link href="#" className="flex items-start"><Image width={28} height={39} src="./assets/images/svg/footer-logo.svg" alt="footer-logo" /> <span
-                                className="font-comic ml-1 pt-2 text-white !leading-none text-custom-3xl font-bold">Tez Wealth</span></Link>
+                            <Link href="#" className="flex items-start"> <Image
+                                        src="/assets/images/webp/logo.webp"
+                                        height={39}
+                                        width={207}
+                                        alt="footerlogo"
+                                        className=" max-w-[207px] w-full"
+                                      />
+                                </Link>
                             <Paragraph
                                 className="max-w-[306px] max-sm:pt-6 max-custom-sm:text-center max-sm:mx-auto !text-white text-opacity-80 !leading-160 pt-3.5 sm:pb-[30px] pb-[35px]">
                                 Secure, personalized insights with on-demand access to human advisors.</Paragraph>
